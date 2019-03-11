@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63b78df8-3fbd-4ec0-a03a-253c6ffe3861}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.6</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="A GBus count\Gbus Count.txt" />
+    <Content Include="A GBus count\input.txt" />
+    <Content Include="A GBus count\output2.txt" />
+    <Content Include="A GBus count\output3.txt" />
+    <Content Include="A GBus count\outputGbusCount.txt" />
+    <Content Include="B Googol practise\googol problem.txt" />
+    <Content Include="B Googol practise\output_large.txt" />
+    <Content Include="B Googol practise\output_small.txt" />
+    <Content Include="C Sort Scrambled\SortScrambled.txt" />
+    <Content Include="D sum of sums\sum of sums problem.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="A GBus count\gbusCount.py" />
+    <Compile Include="B Googol practise\googol.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="A GBus count" />
+    <Folder Include="B Googol practise" />
+    <Folder Include="C Sort Scrambled" />
+    <Folder Include="D sum of sums" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
